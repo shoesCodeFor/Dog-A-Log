@@ -6,13 +6,17 @@ import "./Nav.css"
 class Nav extends Component {
   constructor() {
     super();
-    this.state = { activeItem: null };
+    this.state = { 
+        activeItem: null,
+        score: 0
+    };
   }
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
   render() {
     const { activeItem } = this.state;  
-    return (   
+    return (
+        <div>   
         <Menu>
             <Menu.Item>
                 <Logo size="3em" shadow_x="8" shadow_y="9" />
@@ -41,7 +45,14 @@ class Nav extends Component {
                 onClick={this.handleItemClick}>
                 About the Game
             </Menu.Item>
+            <Menu.Menu position='right'>
+                <Menu.Item>
+                <h1>Score:  {this.state.score}</h1>
+                </Menu.Item>
+            </Menu.Menu>
         </Menu>
+        
+        </div>
         );
     }
 }
