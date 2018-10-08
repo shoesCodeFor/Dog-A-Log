@@ -1,29 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Logo from './components/Logo';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
+import { Flex, Box } from 'reflexbox';
+import dawgs from "./dawgs.json";
 
 class App extends Component {
+  state = {
+    dawgs
+  };
+
   render() {
     return (
       <div className="App">
         <Nav />
         <header className="App-header">
-          <Logo size="3em" shadow_x="8" shadow_y="9" />
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        <Flex
+          justify='center'
+          wrap
+          w={1}
+          style={{ height: '100%' }}
+          mt={2}
+          px={3}
+          py={4}
+        >
+            {this.state.dawgs.map(dawg => (
+              <Box p={2} w={256}>
+                <img className="dogTag" src={dawg.image} alt={dawg.id} />
+              </Box> 
+            ))}
+        </Flex>
         </header>
+        <Footer />
       </div>
     );
   }

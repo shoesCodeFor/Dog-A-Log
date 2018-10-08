@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image":"https://images.dog.ceo/breeds/boxer/n02108089_11074.jpg"
+    },
+    {
+        "id": 2,
+        "image":"https://images.dog.ceo/breeds/pug/n02110958_9642.jpg"
+    },
+    {
+        "id": 3,
+        "image":"https://images.dog.ceo/breeds/bulldog-boston/n02096585_12362.jpg"
+    },
+    {
+        "id": 4,
+        "image":"https://images.dog.ceo/breeds/bulldog-french/n02108915_142.jpg"
+    },
+    {
+        "id": 5,
+        "image":"https://images.dog.ceo/breeds/bulldog-french/n02108915_2118.jpg"
+    },
+    {
+        "id": 6,
+        "image":"https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1134.jpg"
+    }
+]

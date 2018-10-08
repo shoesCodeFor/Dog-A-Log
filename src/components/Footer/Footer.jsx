@@ -3,7 +3,7 @@ import { Menu } from 'semantic-ui-react';
 import logo from '../../logo.svg';
 import "./Footer.css"
 
-class Nav extends Component {
+class Footer extends Component {
   constructor() {
     super();
     this.state = { activeItem: null };
@@ -15,26 +15,29 @@ class Nav extends Component {
     return (   
         <Menu attached='bottom'>
           <Menu.Item
-            name='section1'
-            active={activeItem === 'section1'}
-            onClick={this.handleItemClick}
-          >
-            CSS by Semantic UI
-          </Menu.Item>
-
-          <Menu.Item
             name='section2'
             active={activeItem === 'section2'}
             onClick={this.handleItemClick}
           >
-            Section 2
+            <a href="http://react.semantic-ui.com/" target="_blank" rel="noopener noreferrer">
+            Built By Schuyler Ankele with: 
+            </a>
           </Menu.Item>
           <Menu.Item>
             <img src={logo} className="App-logo" alt="logo" />
+          </Menu.Item>
+          <Menu.Item
+            name='section1'
+            active={activeItem === 'section1'}
+            onClick={this.handleItemClick}
+          >
+            <a href="http://react.semantic-ui.com/" target="_blank" rel="noopener noreferrer">
+            CSS by Semantic UI
+            </a>
           </Menu.Item>
         </Menu>
         );
     }
 }
 
-export default Nav;
+export default Footer;
