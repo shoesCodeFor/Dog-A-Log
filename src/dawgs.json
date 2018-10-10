@@ -33,5 +33,11 @@
         "id": 7,
         "image":"https://images.pexels.com/photos/374898/pexels-photo-374898.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
         "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "clicked": false
     }
+
 ]
