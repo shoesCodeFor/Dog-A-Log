@@ -35,6 +35,15 @@ class Footer extends Component {
             CSS by Semantic UI
             </a>
           </Menu.Item>
+          <Menu.Item
+            name='section2'
+            active={activeItem === 'section2'}
+            onClick={this.handleItemClick}
+          >
+            <a href="https://github.com/shoesCodeFor/Dog-A-Log" target="_blank" rel="noopener noreferrer">
+            <i aria-hidden='true' class='github large icon middle aligned' />
+            </a>
+          </Menu.Item>
         </Menu>
         );
     }
