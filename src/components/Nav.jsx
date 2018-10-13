@@ -8,7 +8,7 @@ class Nav extends Component {
     super(props);
     this.state = { 
         activeItem: null,
-        score: 0
+        score: this.props.score
     };
   }
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
@@ -47,7 +47,7 @@ class Nav extends Component {
             </Menu.Item>
             <Menu.Menu position='right'>
                 <Menu.Item>
-                <h1>Score:  {this.props.score}</h1>
+                <h1>Score:  {this.state.score}</h1>
                 </Menu.Item>
             </Menu.Menu>
         </Menu>
