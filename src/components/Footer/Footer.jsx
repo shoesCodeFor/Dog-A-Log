@@ -13,7 +13,7 @@ class Footer extends Component {
   render() {
     const { activeItem } = this.state;  
     return (   
-        <Menu attached='bottom' id="attributionNav">
+        <Menu attached='bottom' id="attributionNav" inverted>
           <Menu.Item
             name='section2'
             active={activeItem === 'section2'}
